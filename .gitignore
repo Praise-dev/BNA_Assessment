@@ -1,0 +1,7 @@
+# compiled TS and npm packages
+build/*
+node_modules/*
+
+# config files
+nodemon.json
+.env

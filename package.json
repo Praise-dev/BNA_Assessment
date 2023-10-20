@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "start:dev": "npx nodemon",
+    "start": "npm run build:prod && node ./build/app.js",
+    "build:dev": "npx tsc",
+    "build": "rm -rf ./build && tsc"
+  },
+  "dependencies": {
+    "@azure/identity": "^3.3.2",
+    "@azure/storage-blob": "^12.16.0",
+    "@types/node": "^20.8.7",
+    "dotenv": "^16.3.1",
+    "uuid": "^9.0.1"
+  }
+}
